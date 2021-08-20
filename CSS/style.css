@@ -5,10 +5,84 @@
 html{
     background: lightgray;
 }
+.fullContainer{
+    text-align: center;
+}
+#gameName{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    word-spacing: 10px;
+    margin-top: 40px;
+}
+.bottomArea{
+    margin-top: 30px;
+    text-align: justify;    
+    margin-left: 43%;
+}
+.bottomText{
+    display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.goodNews{
+    display: inline-flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: green;
+}
+.badNews{
+    display: inline-flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+}
+#visibility{
+    visibility: hidden;
+}
+.bottomButton-1{
+    background: red;
+    border: none;
+    width: 100px;
+    height: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.bottomButton-1:hover{
+    transform: translate(-2px,-5px);
+}
+.players{
+    display: block;
+}
+.player-1{
+    display: inline-block;
+    
+}
+.player-2{
+    display: inline-block;
+}
+.line{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+}
+.playerName{
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: maroon;
+}
+.playerIcon{
+    display: inline-block;
+    font-family: serif;
+    font-size: 30px;
+    margin-left: 10px;
+}
 .container{
-    margin-left: calc(50% - 250px);
+    margin-left: calc(50% - 225px);
     margin-right: calc(50% - 250px);
-    margin-top: 100px;
+    margin-top: 50px;
     width: 450px;
 }
 .row{
