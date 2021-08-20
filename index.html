@@ -5,43 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row row-1">
-            <div class="column r1c1" id="r0c0" onclick="onClickFtn(0,0)">
-                <h1 class="textInside" id="one"></h1>
+    <div class="fullContainer">
+        <h1 id="gameName">Tic Tac Toe</h1>
+        <div class="players">
+            <div class="player-1">
+                <h3 class="playerName">Player-1: </h3>
+                <h3 class="playerIcon">1</h3>
             </div>
-            <div class="column r1c2" id="r0c1" onclick="onClickFtn(0,1)">
-                <h1 class="textInside" id="two"></h1>
-            </div>
-            <div class="column r1c3" id="r0c2" onclick="onClickFtn(0,2)">
-                <h1 class="textInside" id="three"></h1>
-            </div>
-        </div>
-        <div class="row row-2">
-            <div class="column r2c1" id="r1c0" onclick="onClickFtn(1,0)">
-                <h1 class="textInside" id="four"></h1>
-            </div>
-            <div class="column r2c2" id="r1c1" onclick="onClickFtn(1,1)">
-                <h1 class="textInside" id="five"></h1>
-            </div>
-            <div class="column r2c3" id="r1c2" onclick="onClickFtn(1,2)">
-                <h1 class="textInside" id="six"></h1>
+            <h1 class="line">|</h1>
+            <div class="player-2">
+                <div class="player-1">
+                    <h3 class="playerName">Player-2: </h3>
+                    <h3 class="playerIcon">0</h3>
+                </div>
             </div>
         </div>
-        <div class="row row-3">
-            <div class="column r3c1" id="r2c0" onclick="onClickFtn(2,0)">
-                <h1 class="textInside" id="seven"></h1>
+    
+        <div class="container">
+            <div class="row row-1">
+                <div class="column r1c1" id="r0c0" onclick="onClickFtn(0,0)">
+                    <h1 class="textInside" id="one"></h1>
+                </div>
+                <div class="column r1c2" id="r0c1" onclick="onClickFtn(0,1)">
+                    <h1 class="textInside" id="two"></h1>
+                </div>
+                <div class="column r1c3" id="r0c2" onclick="onClickFtn(0,2)">
+                    <h1 class="textInside" id="three"></h1>
+                </div>
             </div>
-            <div class="column r3c2" id="r2c1" onclick="onClickFtn(2,1)">
-                <h1 class="textInside" id="eight"></h1>
+            <div class="row row-2">
+                <div class="column r2c1" id="r1c0" onclick="onClickFtn(1,0)">
+                    <h1 class="textInside" id="four"></h1>
+                </div>
+                <div class="column r2c2" id="r1c1" onclick="onClickFtn(1,1)">
+                    <h1 class="textInside" id="five"></h1>
+                </div>
+                <div class="column r2c3" id="r1c2" onclick="onClickFtn(1,2)">
+                    <h1 class="textInside" id="six"></h1>
+                </div>
             </div>
-            <div class="column r3c3" id="r2c2" onclick="onClickFtn(2,2)">
-                <h1 class="textInside" id="nine"></h1>
+            <div class="row row-3">
+                <div class="column r3c1" id="r2c0" onclick="onClickFtn(2,0)">
+                    <h1 class="textInside" id="seven"></h1>
+                </div>
+                <div class="column r3c2" id="r2c1" onclick="onClickFtn(2,1)">
+                    <h1 class="textInside" id="eight"></h1>
+                </div>
+                <div class="column r3c3" id="r2c2" onclick="onClickFtn(2,2)">
+                    <h1 class="textInside" id="nine"></h1>
+                </div>
+            </div> 
+        </div>
+        <div class="bottomArea" id="visibility">
+            <div class="player-bottom">
+                <h1 class="bottomText" id="player-1">Player-1: </h1>
+                <h1 class="goodNews">WIN</h1>
             </div>
-        </div> 
+            <div class="player-bottom">
+                <h1 class="bottomText" id="player-2">Player-2: </h1>
+                <h1 class="badNews">LOSE</h1>
+            </div>
+        </div>
+        <div class="bottomButtons">
+            <button class="bottomButton-1">Restart</button>
+        </div>
     </div>
 
     <script src="JavaScript/script.js"></script>
